@@ -23,7 +23,7 @@
       "x": 0.2583603020496224,
       "y": 0.3002309468822171,
       "uniqueID": "id-8",
-      "name": "",
+      "name": "Sled",
       "topLevel": false,
       "allAtoms": [
         {
@@ -79,8 +79,8 @@
         },
         {
           "atomType": "Difference",
-          "x": 0.14617044228694714,
-          "y": 0.2863741339491917,
+          "x": 0.13322545846817693,
+          "y": 0.25404157043879905,
           "uniqueID": "id-63",
           "ioValues": [
             {
@@ -192,8 +192,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.14347357065803668,
-          "y": 0.6605080831408776,
+          "x": 0.1402373247033441,
+          "y": 0.6581986143187066,
           "uniqueID": "id-97",
           "ioValues": [
             {
@@ -213,6 +213,171 @@
               "ioValue": null
             }
           ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.20765911542610574,
+          "y": 0.2632794457274827,
+          "uniqueID": "id-104",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.2998921251348436,
+          "y": 0.26558891454965355,
+          "uniqueID": "id-108",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.29827400215749733,
+          "y": 0.5173210161662818,
+          "uniqueID": "id-112",
+          "name": "Clamp",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-114",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.05501618122977346,
+              "y": 0.19630484988452657,
+              "uniqueID": "id-120",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 100
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.494066882416397,
+              "y": 0.7413394919168591,
+              "uniqueID": "id-123",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 69,
+                  "currentEquation": "69"
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.043689320388349516,
+              "y": 0.34180138568129326,
+              "uniqueID": "id-126",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 30,
+                  "currentEquation": "30"
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.038834951456310676,
+              "y": 0.7390300230946882,
+              "uniqueID": "id-129",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.09870550161812297,
+              "y": 0.4965357967667437,
+              "uniqueID": "id-162",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 200
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-120",
+              "ap2ID": "id-114"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-126",
+              "ap2ID": "id-162"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.2977346278317152,
+          "y": 0.7967667436489608,
+          "uniqueID": "id-116",
+          "name": "Molecule",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-118",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [],
+          "fileTypeVersion": 1
         }
       ],
       "allConnectors": [
@@ -247,6 +412,11 @@
           "ap2ID": "id-91"
         },
         {
+          "ap2Name": "geometry1",
+          "ap1ID": "id-63",
+          "ap2ID": "id-104"
+        },
+        {
           "ap2Name": "Shape 1",
           "ap1ID": "id-67",
           "ap2ID": "id-97"
@@ -265,6 +435,16 @@
           "ap2Name": "Shape 4",
           "ap1ID": "id-91",
           "ap2ID": "id-97"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-97",
+          "ap2ID": "id-104"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-104",
+          "ap2ID": "id-108"
         }
       ],
       "fileTypeVersion": 1
