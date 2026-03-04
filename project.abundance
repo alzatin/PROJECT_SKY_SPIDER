@@ -2194,13 +2194,14 @@
             },
             {
               "atomType": "Rectangle",
-              "x": 0.1650485436893204,
-              "y": 0.5381062355658198,
+              "x": 0.09223300970873785,
+              "y": 0.5727482678983834,
               "uniqueID": "id-493",
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 8
+                  "ioValue": 8,
+                  "currentEquation": "8"
                 },
                 {
                   "name": "y length",
@@ -2526,9 +2527,111 @@
                 }
               ],
               "fileTypeVersion": 1
+            },
+            {
+              "atomType": "Rotate",
+              "x": 0.13807982740021574,
+              "y": 0.5704387990762124,
+              "uniqueID": "id-553",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "x-axis degrees",
+                  "ioValue": 0
+                },
+                {
+                  "name": "y-axis degrees",
+                  "ioValue": 90,
+                  "currentEquation": "90"
+                },
+                {
+                  "name": "z-axis degrees",
+                  "ioValue": 0
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.17637540453074432,
+              "y": 0.5519630484988453,
+              "uniqueID": "id-559",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 500,
+                  "currentEquation": "500"
+                }
+              ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.035059331175836025,
+              "y": 0.7575057736720554,
+              "uniqueID": "id-563",
+              "name": "armbody + belt",
+              "ioValues": [
+                {
+                  "name": "armbody",
+                  "ioValue": 10
+                },
+                {
+                  "name": "belt",
+                  "ioValue": 1
+                }
+              ],
+              "currentEquation": "armbody + belt"
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.035059331175836025,
+              "y": 0.8706697459584295,
+              "uniqueID": "id-570",
+              "name": "x + endbody",
+              "ioValues": [
+                {
+                  "name": "x",
+                  "ioValue": 1
+                },
+                {
+                  "name": "endbody",
+                  "ioValue": 1
+                }
+              ],
+              "currentEquation": "x + endbody"
+            },
+            {
+              "atomType": "Constant",
+              "x": 0.036138079827400214,
+              "y": 0.6096997690531177,
+              "uniqueID": "id-575",
+              "name": "armbody",
+              "value": 10
             }
           ],
-          "allConnectors": [],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-493",
+              "ap2ID": "id-553"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-553",
+              "ap2ID": "id-559"
+            },
+            {
+              "ap2Name": "armbody",
+              "ap1ID": "id-575",
+              "ap2ID": "id-563"
+            }
+          ],
           "fileTypeVersion": 1
         }
       ],
