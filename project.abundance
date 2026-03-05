@@ -2639,14 +2639,15 @@
             },
             {
               "name": "height",
-              "ioValue": 500
+              "ioValue": 1500,
+              "currentEquation": "1500"
             }
           ]
         },
         {
           "atomType": "Equation",
-          "x": 0.07874865156418555,
-          "y": 0.5981524249422633,
+          "x": 0.07713052858683926,
+          "y": 0.5866050808314087,
           "uniqueID": "id-1211",
           "name": "armbody + belt",
           "ioValues": [
@@ -2656,7 +2657,8 @@
             },
             {
               "name": "belt",
-              "ioValue": 500
+              "ioValue": 1500,
+              "currentEquation": "1500"
             }
           ],
           "currentEquation": "armbody + belt"
@@ -2670,7 +2672,7 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 600
+              "ioValue": 1600
             },
             {
               "name": "endbody",
@@ -2755,7 +2757,7 @@
             },
             {
               "name": "xDist",
-              "ioValue": 620
+              "ioValue": 1620
             },
             {
               "name": "yDist",
@@ -3443,7 +3445,7 @@
             },
             {
               "name": "xDist",
-              "ioValue": 620
+              "ioValue": 1620
             },
             {
               "name": "yDist",
