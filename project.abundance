@@ -4300,6 +4300,21 @@
           "ioValue": 180
         }
       ]
+    },
+    {
+      "atomType": "Readme",
+      "x": 0.8878101402373247,
+      "y": 0.4295612009237875,
+      "uniqueID": "id-1555",
+      "name": "README",
+      "ioValues": [
+        {
+          "name": "value",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "readMeText": "Readme text here",
+      "global": true
     }
   ],
   "allConnectors": [
@@ -4317,6 +4332,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-357",
       "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "value",
+      "ap1ID": "id-357",
+      "ap2ID": "id-1555"
     },
     {
       "ap2Name": "Shape 1",
