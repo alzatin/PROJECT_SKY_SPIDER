@@ -227,8 +227,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.037756202804746494,
-      "y": 0.6812933025404158,
+      "x": 0.06526429341963323,
+      "y": 0.4272517321016166,
       "uniqueID": "id-33",
       "name": "Plywood Sheet",
       "ioValues": [
@@ -2065,8 +2065,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.038834951456310676,
-      "y": 0.5334872979214781,
+      "x": 0.035059331175836025,
+      "y": 0.6859122401847575,
       "uniqueID": "id-16",
       "name": "Arm assembly",
       "ioValues": [
@@ -3592,6 +3592,106 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.0970873786407767,
+      "y": 0.6789838337182448,
+      "uniqueID": "id-1405",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 8
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.1574973031283711,
+      "y": 0.6743648960739029,
+      "uniqueID": "id-1411",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 150,
+          "currentEquation": "150"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 300,
+          "currentEquation": "300"
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.23624595469255666,
+      "y": 0.6743648960739029,
+      "uniqueID": "id-1417",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 45,
+          "currentEquation": "45"
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.09331175836030205,
+      "y": 0.8729792147806004,
+      "uniqueID": "id-1423",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -3624,6 +3724,26 @@
       "ap2Name": "Shape 2",
       "ap1ID": "id-8",
       "ap2ID": "id-346"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-16",
+      "ap2ID": "id-1405"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-16",
+      "ap2ID": "id-1423"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1405",
+      "ap2ID": "id-1411"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1411",
+      "ap2ID": "id-1417"
     }
   ],
   "unitsKey": "MM",
